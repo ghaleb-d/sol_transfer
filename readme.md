@@ -41,8 +41,7 @@ This project is beginner-friendly and documents every concept to help new Rust d
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/your-username/rust-solana-transfer-backend.git
-cd rust-solana-transfer-backend
+git clone ""
 ```
 
 ### 2. Run the Server
