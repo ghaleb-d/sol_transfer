@@ -8,3 +8,4 @@ pub async fn transfer_handler(req: web::Json<TransferRequest>) -> impl Responder
     println!("Request to transfer {} lamports from {} to {}", data.amount, data.from, data.to);
     HttpResponse::Ok().body("Transfer request received.")
 }
+
