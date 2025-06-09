@@ -7,6 +7,7 @@ mod routes;
 mod utils;
 
 //  Import the handlers defined in your route modules
+use actix_cors::Cors;
 use routes::balance::balance_handler;
 use routes::transfer::transfer_handler;
 
@@ -18,6 +19,7 @@ async fn main() -> std::io::Result<()> {
 
     HttpServer::new(|| {
         App::new()
+            .wrap(Cors::permissive()) // allow all origins for dev
             .service(hello) // ➕ GET / -> returns greeting
             .service(transfer_handler) // ➕ POST /transfer -> sends SOL
             .service(balance_handler) // ➕ GET /balance/{pubkey} -> fetch balance

@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 actix-web = "4"         # Web framework for building APIs
+actix-cors = "0.7"
 serde = { version = "1.0", features = ["derive"] } # For (de)serializing JSON payloads
 tokio = { version = "1", features = ["full"] }     # Async runtime needed by actix
 serde_json = "1.0"
