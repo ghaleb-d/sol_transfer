@@ -7,5 +7,10 @@ edition = "2024"
 actix-web = "4"         # Web framework for building APIs
 serde = { version = "1.0", features = ["derive"] } # For (de)serializing JSON payloads
 tokio = { version = "1", features = ["full"] }     # Async runtime needed by actix
-solana-client = "1.18"  # SDK client to talk to Solana RPC
-solana-sdk = "1.18"     # SDK with transaction-building and signing
+serde_json = "1.0"
+dotenv = "0.15"
+
+# Solana SDK crates
+solana-client = "1.18"
+solana-sdk = "1.18"
+solana-transaction-status = "1.18"

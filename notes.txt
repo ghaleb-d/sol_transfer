@@ -1,6 +1,0 @@
-use actix_web::{get, App, HttpServer, Responder};
-use: Brings items from crates into scope.
-get: Macro to define a route handler for HTTP GET requests.
-App: Builds the app routing tree.
-HttpServer: Starts the server.
-Responder: Trait for things that can return a response (like String, &str, etc.).
